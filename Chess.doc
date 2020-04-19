@@ -16,6 +16,7 @@ Piece
 Color
 PieceType
 moves: List<Move> 
+attckingMoves: List<Move>
 
 MoveService
 List<Cell> getAvailableMoves(Cell curr, Board board, Piece)
