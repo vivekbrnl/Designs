@@ -4,13 +4,11 @@ Entities:
 
 Cell (color, position)
 Color
-Position
-Piece
-isOccupied()
+Position	
 
 Board
-[8][8] cell
-
+Map<cell, piece>
+Cell getPiecePosition(Piece)
 
 Piece
 Color
@@ -19,12 +17,13 @@ moves: List<Move>
 attckingMoves: List<Move>
 
 MoveService
-List<Cell> getAvailableMoves(Cell curr, Board board, Piece)
+List<Cell> getAvailableMoves(Cell curr, Board board, Piece) // it will piece's move
 
 
 Player
 Name
 color
+play()
 
 Game
 Board
@@ -33,6 +32,8 @@ Status (PAUSED, ABANDONED)
 Player1
 Player2
 CurrentPlayer
+initialize() //deploypieces(), give turn to players()
+play();
 
 
 
